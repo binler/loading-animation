@@ -1,0 +1,159 @@
+/* line 1, ../sass/style.sass */
+body {
+  background: #98cbbc;
+  padding: 20px;
+  font-family: "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 7, ../sass/style.sass */
+.main {
+  max-width: 980px;
+  margin: 50px auto;
+  display: block;
+}
+
+/* line 12, ../sass/style.sass */
+.header {
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 16, ../sass/style.sass */
+.grid {
+  padding: 10px;
+  background: #ddd;
+}
+/* line 19, ../sass/style.sass */
+.grid .item {
+  height: 60px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 160px;
+  background-position: center;
+  background-size: cover;
+}
+/* line 30, ../sass/style.sass */
+.grid .item:nth-child(1) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/52758/screenshots/2922421/virgin_islands_national_park_dribbble_j_fletcher.jpg);
+}
+/* line 32, ../sass/style.sass */
+.grid .item:nth-child(2) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/2921609/untitled-4.png);
+}
+/* line 34, ../sass/style.sass */
+.grid .item:nth-child(3) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2921840/dribbble_stickermule.png);
+}
+/* line 36, ../sass/style.sass */
+.grid .item:nth-child(4) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/2917699/untitled-1.png);
+}
+/* line 38, ../sass/style.sass */
+.grid .item:nth-child(5) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2920459/dribbble_pill.png);
+}
+/* line 40, ../sass/style.sass */
+.grid .item:nth-child(6) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/2920159/untitled-1.png);
+}
+/* line 42, ../sass/style.sass */
+.grid .item:nth-child(7) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/52758/screenshots/2919566/st_john_usvi_fish.jpg);
+}
+/* line 44, ../sass/style.sass */
+.grid .item:nth-child(8) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/246575/screenshots/2919362/dribbble.jpg);
+}
+/* line 46, ../sass/style.sass */
+.grid .item:nth-child(9) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/299/screenshots/2917854/fizzy-shades.png);
+}
+/* line 48, ../sass/style.sass */
+.grid .item:nth-child(10) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/2917699/untitled-1.png);
+}
+/* line 50, ../sass/style.sass */
+.grid .item:nth-child(11) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/1061/screenshots/2916828/mimita_2x.png);
+}
+/* line 52, ../sass/style.sass */
+.grid .item:nth-child(12) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2916809/dribbble_lemon.png);
+}
+/* line 54, ../sass/style.sass */
+.grid .item:nth-child(13) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/2915526/untitled-1.png);
+}
+/* line 56, ../sass/style.sass */
+.grid .item:nth-child(14) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/3460/screenshots/2915278/business-cards.png);
+}
+/* line 58, ../sass/style.sass */
+.grid .item:nth-child(15) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2915065/dribbble_soda.png);
+}
+/* line 60, ../sass/style.sass */
+.grid .item:nth-child(16) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/60166/screenshots/2914950/bear.jpg);
+}
+/* line 62, ../sass/style.sass */
+.grid .item:nth-child(17) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2914297/dribbble_acorn.png);
+}
+/* line 64, ../sass/style.sass */
+.grid .item:nth-child(18) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2911678/dribbble_beerglass.png);
+}
+/* line 66, ../sass/style.sass */
+.grid .item:nth-child(19) {
+  background-image: url(https://d13yacurqjgara.cloudfront.net/users/34991/screenshots/2910866/dribbble_whale.png);
+}
+/* line 69, ../sass/style.sass */
+.grid .item:nth-child(4n-5) {
+  height: 50px;
+}
+/* line 72, ../sass/style.sass */
+.grid .item:nth-child(2n) {
+  height: 300px;
+}
+/* line 75, ../sass/style.sass */
+.grid .item:nth-child(3n) {
+  height: 120px;
+}
+
+/* line 79, ../sass/style.sass */
+.item {
+  opacity: 0;
+}
+
+/* line 82, ../sass/style.sass */
+.item.isVisible {
+  animation: fadeadd 600ms ease-in forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeadd {
+  0% {
+    opacity: 0;
+    transform: scale(0.2) rotateY(60deg);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+  }
+}
